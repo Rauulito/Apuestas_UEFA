@@ -1,0 +1,27 @@
+En este archivo vamos a identificar los patrones de diseño que estan en esta practica.
+Vamos a identificar 8 patrones distintos dentro de la practica.
+La manera de la que vamos a identificarlos es poniendo: archivo.py(carpeta(donde esta el archivo))
+Los 8 diferentes patrones son :
+
+-ABSTRACT_FACTORY: -apuesta.py(services)
+
+-ADAPTER: -repositoriopatido.py(repositories)
+
+-COMMAND:
+
+-DECORATOR: -decorators.py(services)
+            -validate_apuesta.py(validate)
+            -validate_cliente.py(validate)
+            -validate_cuota.py(validate)
+            -validate_equipo.py(validate)
+            -validate_partido.py(validate)
+
+-FACTORY_METHOD: -logger.py(utils)
+
+-OBSERVER:
+
+-STRATEGY:
+
+-SINGLETON: -decorators.py(services)
+            -singleton.py(utils)
+
