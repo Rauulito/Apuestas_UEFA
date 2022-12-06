@@ -17,6 +17,7 @@ Los 8 diferentes patrones son :
             -validate_partido.py(validate)
 
 -FACTORY_METHOD: -logger.py(utils)
+                 -repositoriobase.py(repositories)
 
 -OBSERVER:
 
