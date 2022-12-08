@@ -1,6 +1,31 @@
 En este archivo vamos a identificar los patrones de diseño que estan en esta practica.
 Vamos a identificar 9 patrones distintos dentro de la practica.
 La manera de la que vamos a identificarlos es poniendo: archivo.py(carpeta(donde esta el archivo))
+
+Antes de buscar los patrones vamos a hacer una breve introduccion.
+Los patrones de diseño son soluciones típicas a problemas comunes que se presentan al desarrollar software.
+Los patrones de diseño en Python se basan en las principales características del lenguaje, como la programación orientada a objetos y
+la programación funcional.
+Ahora vamos a hablar un poco de cada patron. Vamoa a hablar de tres patrones distintos:
+-PATRONES CREACIONALES: son los que proporcionan varios mecanismos de creación de objetos que incrementan la flexibilidad y
+la reutilización del código existente.
+En la práctica encontraemos el FACTORY_METHOD que proporciona una interfaz para crear objetos
+en una superclase, mientras permite a las subclases alterar el tipo de objetos que se crearán. Tambien tendremos ABSTRACT_FACTORY
+que nos permite producir familias de objetos relacionados sin especificar sus clases concretas. Además tendremos el CONSTRUCTOR
+que nos permite construir objetos complejos paso a paso. El patrón nos permite producir distintos tipos y representaciones de un
+objeto empleando el mismo código de construcción.Y el último patron creacional que encontraemos es el SINGLETON  que nos permite
+asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
+-PATRONES ESTRUCTURALES: explican cómo ensamblar objetos y clases en estructuras más grandes, a la vez que se mantiene la flexibilidad
+ y eficiencia de estas estructuras.
+ El patron ADAPTER  permite la colaboración entre objetos con interfaces incompatibles Y el DECORATOR permite añadir funcionalidades a objetos
+colocando estos objetos dentro de objetos encapsuladores especiales que contienen estas funcionalidades.
+-PATRONES DE COMPORTAMINETO: tratan con algoritmos y la asignación de responsabilidades entre objetos.
+El COMMAND convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación
+te permite parametrizar los métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud
+y soportar operaciones que no se pueden realizar. El OBSERVER permite definir un mecanismo de suscripción para notificar a varios
+objetos sobre cualquier evento que le suceda al objeto que están observando. El STRATEGY permite definir una familia de algoritmos,
+colocar cada uno de ellos en una clase separada y hacer sus objetos intercambiables.
+
 Los 9 diferentes patrones son :
 
 -ABSTRACT_FACTORY: -apuesta.py(services)
