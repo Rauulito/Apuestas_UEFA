@@ -1,6 +1,6 @@
 from .. import db
 from main.models import EquipoModel, PartidoModel, ClienteModel, CuotaModel
-from functools import wraps
+from functools import wrapper
 
 
 def validar_apuesta(equipo_id, monto):
@@ -32,7 +32,6 @@ def validar_equipo_pro(*ids):
                 equipo = db.session.query(EquipoModel).get(id)
                 if not equipo:
                     return f'El equipo con el id: {id} no ha sido encontrado', 404
-    
             return function(*args, **kwargs)
         return wrapper
     return decorator

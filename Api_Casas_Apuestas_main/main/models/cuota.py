@@ -26,6 +26,11 @@ class Cuota(db.Model):
     def cuota_local(self):
         return self.__cuota_local
 
+    # añadido por mi
+    @hybrid_property
+    def cuota_empate(self):
+        return self.__cuota_empate
+
     @cuota_local.setter
     def cuota_local(self, cuota):
         self.__cuota_local = cuota

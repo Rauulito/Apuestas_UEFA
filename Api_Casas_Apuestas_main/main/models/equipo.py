@@ -1,4 +1,4 @@
-from .. import db
+from Api_Casas_Apuestas_main.main import bookmaker_db as db
 from sqlalchemy.ext.hybrid import hybrid_property
 
 class Equipo(db.Model):

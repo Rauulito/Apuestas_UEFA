@@ -34,7 +34,7 @@ class PartidoRepositorio(Create, Read, Delete, Update):
 
     
     def update(self, objeto):
-        db.session.add(objeto)
+        db.session.update(objeto)
         db.session.commit()
         return objeto
 

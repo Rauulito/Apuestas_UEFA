@@ -19,7 +19,7 @@ class EquipoService:
         return repositorio.delete(id)
 
     def actualizar_equipo(self, id, data):
-        equipo = self.obtener_equipo_por_id(id)
+        equipo = self.cd(id)
         for key, value in data.items():
             equipo.__setattr__(key, value)
         return repositorio.update(objeto=equipo)
