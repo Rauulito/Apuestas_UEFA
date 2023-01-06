@@ -1,2 +1,2 @@
-source bin/activate
-python3 app.py
+source env/Scripts/activate
+python app.py

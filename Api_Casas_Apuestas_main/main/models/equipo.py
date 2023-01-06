@@ -1,4 +1,18 @@
-from Api_Casas_Apuestas_main.main import bookmaker_db as db
+# import sys
+# sys.path.insert(0,"C:/Users/Lorenzo/Documents/programacion/2.Desarrollo_OO/Apuestas_UEFA/Api_Casas_Apuestas_main")
+# import bookmaker as db
+# from sqlalchemy.ext.hybrid import hybrid_property
+# from flask import Flask, render_template, request  
+# from flask_sqlalchemy import SQLAlchemy
+# from datetime import datetime
+"""
+DOCSTRING
+Importante--> el uso del ..
+el .. hace referencia a la carpeta anterior y el . a la carpeta actual a esto se le conoce como import relativo
+He puesto un docstring explicando esto ya que este concepto es clave a lo largo del desarrollo del proyecto
+En la documentación(https://docs.python.org/es/3/reference/import.html) se puede ver con ejemplos(Apartado 5.7)
+"""
+from .. import db
 from sqlalchemy.ext.hybrid import hybrid_property
 
 class Equipo(db.Model):

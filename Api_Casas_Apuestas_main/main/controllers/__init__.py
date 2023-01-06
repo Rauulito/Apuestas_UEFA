@@ -1,3 +1,4 @@
+#Este tipo de importaciones significan no sólo el cómo te lo vas a importar sino que además seleccionan aquello que te vas a importar
 from .clientes import Cliente as ClienteController
 from .clientes import Clientes as ClientesController
 from .partidos import Partido as PartidoController
