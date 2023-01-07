@@ -63,6 +63,3 @@ class Cliente(db.Model):
     @activado.deleter
     def activado(self):
         del self.__activado
-
-
-    
