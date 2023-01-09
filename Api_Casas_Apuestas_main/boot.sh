@@ -1,2 +1,2 @@
 source env/Scripts/activate
-python app.py
+python3 app.py
