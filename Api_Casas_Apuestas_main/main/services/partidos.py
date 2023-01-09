@@ -1,8 +1,5 @@
-import sys
-sys.path.insert(0,"C:/Users/Lorenzo/Documents/programacion/2.Desarrollo_OO/Apuestas_UEFA/Api_Casas_Apuestas-main/repositories")
-sys.path.insert(0,"C:/Users/Lorenzo/Documents/programacion/2.Desarrollo_OO/Apuestas_UEFA/Api_Casas_Apuestas-main/map")
-from repositoriopartido import PartidoRepositorio
-from partido_schema import PartidoSchema 
+from main.repositories.repositoriopartido import PartidoRepositorio
+from main.map import PartidoSchema
 
 
 
