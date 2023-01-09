@@ -1,6 +1,4 @@
-import sys
-sys.path.insert(0,"C:/Users/Lorenzo/Documents/programacion/2.Desarrollo_OO/Apuestas_UEFA/Api_Casas_Apuestas-main/main")
-from services.equipo import EquipoService
+from main.services.equipo import EquipoService
 
 service = EquipoService()
 
