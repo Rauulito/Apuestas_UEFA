@@ -49,16 +49,32 @@ def load_partidos():
 
 def load_cuotas():
     partidos = db.session.query(PartidoModel).all()
+    xx = 0 # PARA VER COMO EVOLUCIONA LA EJECUCION
     for partido in partidos:
         json = {
             "partido_id": partido.id
         }
         cuota = cuota_schema.load(json)
         service_cuota.aplicar_cuotas(cuota)
+        xx = xx + 1
+        print("Voy por:", xx, "cuota local=", cuota.cuota_local, "cuota visitante=", cuota.cuota_visitante,
+                "cuota empate=", cuota.cuota_empate) # PARA VER COMO EVOLUCIONA LA EJECUCION
         db.session.add(cuota)
         db.session.commit()
 
 
 if __name__ == '__main__':
+
+    print("Programa iniciado")
     db.create_all()
-    app.run(port=os.getenv("PORT"), debug=True)
+    print("Creado todo")
+    load_clientes()
+    print("Cargados los clientes")
+    load_equipos()
+    print("Cargados los equipos")
+    load_partidos()
+    print("Cargados los partidos")
+    load_cuotas()
+    print("Cargadas las cuotas")
+
+    #app.run(port=os.getenv("PORT"), debug=True)
