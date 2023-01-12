@@ -40,6 +40,9 @@ class ApuestaService:
 class CuotaStrategy(ABC):
     def calcular_cuota(self, cuota):
         """Calcular probabilidad"""
+        # No he codificado nada aquí porque los cambios de cálculo de probabilidades los he hecho
+        # en el servicio de cuotas, creando unos nuevos métodos afinados, de forma que se puedan
+        # sustituir las llamadas a los antiguos por llamadas a los nuevos
 
 class CuotaLocal(CuotaStrategy):
     def calcular_cuota(self, cuota):

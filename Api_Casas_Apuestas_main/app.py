@@ -55,8 +55,11 @@ def load_cuotas():
             "partido_id": partido.id
         }
         cuota = cuota_schema.load(json)
-        service_cuota.aplicar_cuotas(cuota)
-        xx = xx + 1
+        # Cambiamos la siguiente sentencia por el nuevo metodo de calcular cuotas afinado que hemos
+        # creado en el servicio de cuotas
+        #service_cuota.aplicar_cuotas(cuota)
+        service_cuota.aplicar_cuotas_afinado(cuota)
+        xx = xx + 1 # PARA VER COMO EVOLUCIONA LA EJECUCION
         print("Voy por:", xx, "cuota local=", cuota.cuota_local, "cuota visitante=", cuota.cuota_visitante,
                 "cuota empate=", cuota.cuota_empate) # PARA VER COMO EVOLUCIONA LA EJECUCION
         db.session.add(cuota)
