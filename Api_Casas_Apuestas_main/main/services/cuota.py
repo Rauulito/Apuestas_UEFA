@@ -49,7 +49,7 @@ class CuotaService:
         visitante = equipo_service.obtener_equipo_por_id(partido.equipo_visitante_id)
         local = equipo_service.obtener_equipo_por_id(partido.equipo_local_id)
 
-        # Asignamos los puntos del año actual a los equipos del partido
+        # Asignamos los  puntos del año actual a los equipos del partido
 
         puntos_local = local.puntaje
         puntos_visitante = visitante.puntaje
@@ -85,7 +85,6 @@ class CuotaService:
             año_datos = año_actual - (i + 1)
             año = str(año_datos)
             with open(f'./docs/equipo{año}.csv', encoding='utf-8') as csv_file:
-            #with open('./docs/equipo2020.csv', encoding='utf-8') as csv_file:
                 csv_reader = csv.reader(csv_file, delimiter=',')
                 for row in csv_reader:
                     if local.nombre == row[0]:
