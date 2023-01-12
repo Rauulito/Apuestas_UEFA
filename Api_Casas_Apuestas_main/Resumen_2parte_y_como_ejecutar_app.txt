@@ -1,0 +1,8 @@
+Una vez que hemos hecho los ajustes para que funcione la primera parte, en esta segunda nos hemos encargado de
+elaborar unos nuevos métodos afinados para el cálculo de las cuotas. Esta elaboracion la hemos realizado
+en el fichero en el servicio cuota.py. Para hacer los nuevos métodos hemos necesitado informacion de los equipos
+de años anteriores, para ello hemos hecho unos csv desde 2016 hasta 2020.
+Para probar que funciona la aplicacion lo que se debe de hacer es ejecutar en la terminal python3 app.py. Si ya se había
+ejecutado anteriormente se debe borrar antes de volverlo a ejecutar la carpeta instance.
+Cuando se ejecuta la prueba salen unos mensajes en el terminal indicando por donde va el programa y dando el detalle de las
+cuotas calculadas.
